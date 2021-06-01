@@ -15,7 +15,7 @@ module.exports = {
       function GetPlates(err, result, fields, row) {
         if (err) return console.error(err);
         if (typeof err === "undefined") throw err;
-
+        if (result) {
         const vehicleInformation = new MessageEmbed()
         vehicleInformation.setColor('RANDOM')
         for (var i = 0; i < result.length; i++) {
@@ -36,6 +36,9 @@ module.exports = {
         // console.log(results)
         // console.log(result[1].plate)
         // console.log(result[i]['plate'])
+        } else {
+            message.channe.send('Du glemte vist noget, hva!?')
+        }
       }
     );
     
