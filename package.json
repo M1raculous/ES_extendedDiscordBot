@@ -1,0 +1,16 @@
+{
+  "name": "es_extendedbot",
+  "version": "2.3.9",
+  "description": "A Discord bot made for a FiveM server, with the framework ESX.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "M1raculous",
+  "license": "ISC",
+  "dependencies": {
+    "discord": "^0.8.2",
+    "mysql": "^2.18.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "bot": {
+        "token": "ODQ4MTcxNDIyNTcxODIzMTI3.YLIvMQ.XxE8ELPlFGJG92aHEDAPECxtg1o",
+        "prefix": "!"
+    },
+    "permissions": {
+        "plate": "",
+        "lookup": ""
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "essentialmode"
+    }
+}
