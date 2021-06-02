@@ -21,7 +21,6 @@ module.exports = {
           inventoryEmbed.setColor("#1874ed");
           for (var i = 0; i < result.length; i++) {
             var n = i + 1;
-            // console.log(n + " plate: " + result[i]["plate"]);
 
             inventoryEmbed.addFields({
               name: `Informatiom om ${result[i]["plate"]} #${n}`,
