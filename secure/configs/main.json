@@ -5,7 +5,9 @@
     },
     "permissions": {
         "plate": "",
-        "lookup": ""
+        "lookup": "",
+        "parkings": "",
+        "bm": ""
     },
     "mysql": {
         "host": "localhost",
