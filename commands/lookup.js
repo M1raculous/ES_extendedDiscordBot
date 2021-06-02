@@ -36,7 +36,7 @@ module.exports = {
           let group = result[0].group;
 
           const lookupEmbed = new MessageEmbed()
-            .setColor("RANDOM")
+            .setColor("#1874ed")
             .addFields(
               {
                 name: "Person informationer",
