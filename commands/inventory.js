@@ -8,8 +8,7 @@ module.exports = {
     if (!message.member.roles.cache.find((r) => r.id === "823882801115693086"))
       return;
 
-    let id = args;
-    console.log(id);
+    let id = args[0];
     // if(typeof error === 'undefined') return console.log('an error occured!')
     var query = con.query(
       `SELECT * FROM truck_inventory WHERE plate = '${id}'`,
@@ -25,10 +24,12 @@ module.exports = {
             inventoryEmbed.addFields({
               name: `Informatiom om ${result[i]["plate"]} #${n}`,
               value:
-                "**ID**\n " +
-                result[i]["id"] +
                 "\n **Item**\n " +
-                result[i]["item"],
+                result[i]["item"] +
+                "\n **Item Navn**\n " +
+                result[i]["name"] +
+                "\n **Count** \n" + 
+                result[i]["count"],
               inline: true,
             });
           }
@@ -42,6 +43,7 @@ module.exports = {
           message.channe.send("Du glemte vist noget, hva!?");
         }
       }
+
     );
   },
 };
