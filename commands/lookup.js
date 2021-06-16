@@ -6,7 +6,7 @@ module.exports = {
   description: "Template!",
   async execute(client, message, args, con) {
     var id = args[0];
-    if (!message.member.roles.cache.find((r) => r.id === "823882801115693086"))
+    if (!message.member.roles.cache.find((r) => r.id === config.permissions.lookup))
       return;
     // con.query("SELECT identifier, sex, license FROM users", function (err, result, fields) {
     const query = con.query(

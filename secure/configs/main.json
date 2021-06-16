@@ -1,13 +1,38 @@
 {
     "bot": {
-        "token": "ODQ4MTcxNDIyNTcxODIzMTI3.YLIvMQ.XxE8ELPlFGJG92aHEDAPECxtg1o",
+        "token": "ODQ4MTcxNDIyNTcxODIzMTI3.YLIvMQ.X1aMEGfOFrqFqMCGThUAg_2OD0w",
         "prefix": "!"
     },
     "permissions": {
-        "plate": "",
-        "lookup": "",
-        "parkings": "",
-        "bm": ""
+        "plate": "739824966664454241",
+        "lookup": "739824966664454241",
+        "parkings": "739824966664454241",
+        "bm": "739824966664454241",
+        "inventory" : "739824966664454241"
+    },
+    "garages": {
+        "1" : "Midtby",
+        "2" : "Sandy Shores",
+        "3" : "Paleto Bay",
+        "4" : "Mirror Park",
+        "5" : "LSIA (Los Santos International Airport)",
+        "6" : "Grove Street",
+        "7" : "La Puerta",
+        "8" : "Jobcenter",
+        "9" : "Cypress Flats",
+        "10" : "Del Perro",
+        "11" : "Del Perro Pier",
+        "12" : "Vest Vinewood",
+        "13" : "Alta",
+        "14" : "Del Perro Beach",
+        "15" : "Vespucci Beach",
+        "16" : "Ineseno Road",
+        "17" : "Vingården",
+        "18" : "Route 68",
+        "19" : "Grapeseed",
+        "20" : "Hos Politiet",
+        "21" : "Hos Satudarah",
+        "22" : "Auto Exotic"
     },
     "mysql": {
         "host": "localhost",

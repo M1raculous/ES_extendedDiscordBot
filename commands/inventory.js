@@ -5,8 +5,8 @@ module.exports = {
   name: "inventory",
   description: "Template!",
   async execute(client, message, args, con) {
-    if (!message.member.roles.cache.find((r) => r.id === "823882801115693086"))
-      return;
+    if (!message.member.roles.cache.find((r) => r.id === config.permissions.inventory))
+      return message.reply("Det ulovligheder!")
 
     let id = args[0];
     // if(typeof error === 'undefined') return console.log('an error occured!')

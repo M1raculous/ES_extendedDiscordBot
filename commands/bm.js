@@ -5,7 +5,7 @@ module.exports = {
   name: "bm",
   description: "Template!",
   async execute(client, message, args, con) {
-    if (!message.member.roles.cache.find((r) => r.id === "823882801115693086"))
+    if (!message.member.roles.cache.find((r) => r.id === config.permissions.bm))
       return;
 
     let id = args[0];

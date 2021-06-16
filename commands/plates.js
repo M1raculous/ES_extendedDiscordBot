@@ -5,7 +5,7 @@ module.exports = {
   name: "plate",
   description: "Template!",
   async execute(client, message, args, con) {
-    if (!message.member.roles.cache.find((r) => r.id === "823882801115693086"))
+    if (!message.member.roles.cache.find((r) => r.id === config.permissions.plate))
       return;
 
     let id = args[0];
@@ -27,6 +27,8 @@ module.exports = {
               value:
                 "**Nummerplade**\n " +
                 result[i]["plate"] +
+                "\n **Garage**\n " +
+                config.garages[result[i]["gnumber"]] +
                 "\n **Type**\n " +
                 result[i]["type"],
               inline: true,
